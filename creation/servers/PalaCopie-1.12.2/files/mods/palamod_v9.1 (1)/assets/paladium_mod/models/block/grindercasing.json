@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/grinder_casing_block",
+    "up": "paladium_mod:blocks/grinder_casing_block",
+    "north": "paladium_mod:blocks/grinder_casing_block",
+    "east": "paladium_mod:blocks/grinder_casing_block",
+    "south": "paladium_mod:blocks/grinder_casing_block",
+    "west": "paladium_mod:blocks/grinder_casing_block",
+    "particle": "paladium_mod:blocks/grinder_casing_block"
+  }
+}

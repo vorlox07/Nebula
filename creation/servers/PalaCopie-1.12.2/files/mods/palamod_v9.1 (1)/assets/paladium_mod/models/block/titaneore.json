@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/titaneore",
+    "up": "paladium_mod:blocks/titaneore",
+    "north": "paladium_mod:blocks/titaneore",
+    "east": "paladium_mod:blocks/titaneore",
+    "south": "paladium_mod:blocks/titaneore",
+    "west": "paladium_mod:blocks/titaneore",
+    "particle": "paladium_mod:blocks/titaneore"
+  }
+}

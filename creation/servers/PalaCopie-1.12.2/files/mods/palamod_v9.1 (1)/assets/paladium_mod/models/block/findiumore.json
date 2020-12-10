@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/findiumores",
+    "up": "paladium_mod:blocks/findiumores",
+    "north": "paladium_mod:blocks/findiumores",
+    "east": "paladium_mod:blocks/findiumores",
+    "south": "paladium_mod:blocks/findiumores",
+    "west": "paladium_mod:blocks/findiumores",
+    "particle": "paladium_mod:blocks/findiumores"
+  }
+}

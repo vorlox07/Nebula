@@ -1,0 +1,26 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:paladiumgreeningot"
+    },
+    "2": {
+      "item": "paladium_mod:paladiumgreeningot"
+    },
+    "3": {
+      "item": "paladium_mod:paladiumgreeningot"
+    },
+    "5": {
+      "item": "paladium_mod:paladiumgreeningot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:paladiumgreenboots",
+    "count": 1
+  }
+}

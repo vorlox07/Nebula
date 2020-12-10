@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/crusher_top",
+    "up": "paladium_mod:blocks/crusher_top",
+    "north": "paladium_mod:blocks/crusher_front",
+    "east": "paladium_mod:blocks/crusher_side",
+    "south": "paladium_mod:blocks/crusher_side",
+    "west": "paladium_mod:blocks/crusher_side",
+    "particle": "paladium_mod:blocks/crusher_top"
+  }
+}

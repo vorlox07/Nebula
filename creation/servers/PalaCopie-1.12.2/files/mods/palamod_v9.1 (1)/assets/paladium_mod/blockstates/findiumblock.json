@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "paladium_mod:findiumblock"
+    },
+    "facing=north": {
+      "model": "paladium_mod:findiumblock"
+    },
+    "facing=east": {
+      "model": "paladium_mod:findiumblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "paladium_mod:findiumblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "paladium_mod:findiumblock",
+      "y": 270
+    }
+  }
+}

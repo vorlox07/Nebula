@@ -1,0 +1,16 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:titaneblock"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:titaneingot",
+    "count": 9
+  }
+}

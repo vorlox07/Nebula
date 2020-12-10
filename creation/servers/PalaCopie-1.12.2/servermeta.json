@@ -1,0 +1,20 @@
+{
+  "$schema": "file:///C:/Users/GERY/Documents/GitHub/Nebula/creation/schemas/ServerMetaSchema.schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "name": "PalaCopie (Minecraft 1.12.2)",
+    "description": "PalaCopie Running Minecraft 1.12.2 (Forge v14.23.5.2854)",
+    "address": "146.59.136.186:25604", 
+    "discord": {
+      "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    },
+    "mainServer": true,
+    "autoconnect": false
+  },
+  "forge": {
+    "version": "14.23.5.2854"
+  },
+  "untrackedFiles": []
+}

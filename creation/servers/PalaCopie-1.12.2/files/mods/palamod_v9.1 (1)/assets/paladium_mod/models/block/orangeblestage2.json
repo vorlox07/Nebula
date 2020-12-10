@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "paladium_mod:blocks/orangeblue_stage_2",
+    "particle": "paladium_mod:blocks/orangeblue_stage_2"
+  }
+}

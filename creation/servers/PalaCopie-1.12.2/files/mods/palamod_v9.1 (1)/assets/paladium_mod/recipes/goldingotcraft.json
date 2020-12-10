@@ -1,0 +1,42 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "1": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "2": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "3": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "4": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "5": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "6": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "7": {
+      "item": "paladium_mod:goldenparticule"
+    },
+    "8": {
+      "item": "paladium_mod:goldenparticule"
+    }
+  },
+  "result": {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+  }
+}

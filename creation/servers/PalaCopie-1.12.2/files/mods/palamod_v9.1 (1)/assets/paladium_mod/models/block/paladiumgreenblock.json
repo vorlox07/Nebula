@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/gpaladium_block",
+    "up": "paladium_mod:blocks/gpaladium_block",
+    "north": "paladium_mod:blocks/gpaladium_block",
+    "east": "paladium_mod:blocks/gpaladium_block",
+    "south": "paladium_mod:blocks/gpaladium_block",
+    "west": "paladium_mod:blocks/gpaladium_block",
+    "particle": "paladium_mod:blocks/gpaladium_block"
+  }
+}

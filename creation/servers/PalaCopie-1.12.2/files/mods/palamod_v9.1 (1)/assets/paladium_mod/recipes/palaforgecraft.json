@@ -1,0 +1,42 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:brick_block"
+    },
+    "1": {
+      "item": "paladium_mod:paladiumfurnace"
+    },
+    "2": {
+      "item": "minecraft:brick_block"
+    },
+    "3": {
+      "item": "paladium_mod:paladiumfurnace"
+    },
+    "4": {
+      "item": "paladium_mod:findium"
+    },
+    "5": {
+      "item": "paladium_mod:paladiumfurnace"
+    },
+    "6": {
+      "item": "minecraft:brick_block"
+    },
+    "7": {
+      "item": "paladium_mod:paladiumfurnace"
+    },
+    "8": {
+      "item": "minecraft:brick_block"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:palaforge",
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "2": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "3": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "4": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "5": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "6": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "7": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "8": {
+      "item": "paladium_mod:paladiumingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:paladiumarmorbody",
+    "count": 1
+  }
+}

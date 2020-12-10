@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "paladium_mod:paladiumblock"
+    },
+    "facing=north": {
+      "model": "paladium_mod:paladiumblock"
+    },
+    "facing=east": {
+      "model": "paladium_mod:paladiumblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "paladium_mod:paladiumblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "paladium_mod:paladiumblock",
+      "y": 270
+    }
+  }
+}

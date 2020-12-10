@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "paladium_mod:blocks/kiwano_stage_3",
+    "particle": "paladium_mod:blocks/kiwano_stage_3"
+  }
+}

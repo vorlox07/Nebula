@@ -1,0 +1,16 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:paladiumblock"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:paladiumingot",
+    "count": 9
+  }
+}

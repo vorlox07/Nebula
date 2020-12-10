@@ -1,0 +1,36 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "1": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "2": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "3": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "5": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "6": {
+      "item": "paladium_mod:titaneingot"
+    },
+    "8": {
+      "item": "paladium_mod:titaneingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:titanearmorlegs",
+    "count": 1
+  }
+}

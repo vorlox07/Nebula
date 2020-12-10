@@ -1,0 +1,16 @@
+[
+{
+  "modid": "custommainmenu",
+  "name": "Custom Main Menu",
+  "description": "Allows you to edit the mainmenu using json",
+  "version": "2.0.8",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["lumien"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

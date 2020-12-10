@@ -1,0 +1,42 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "1": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "2": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "3": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "4": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "5": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "6": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "7": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "8": {
+      "item": "paladium_mod:amethystingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:amethystblock",
+    "count": 1
+  }
+}

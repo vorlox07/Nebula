@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/cobblereaker_side",
+    "up": "paladium_mod:blocks/cobblereaker_top",
+    "north": "paladium_mod:blocks/cobblereaker_front",
+    "east": "paladium_mod:blocks/cobblereaker_side",
+    "south": "paladium_mod:blocks/cobblereaker_side",
+    "west": "paladium_mod:blocks/cobblereaker_side",
+    "particle": "paladium_mod:blocks/cobblereaker_side"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "3": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "4": {
+      "item": "minecraft:sugar"
+    },
+    "5": {
+      "item": "paladium_mod:paladiumingot"
+    },
+    "7": {
+      "item": "paladium_mod:paladiumingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:speedorb",
+    "count": 1
+  }
+}

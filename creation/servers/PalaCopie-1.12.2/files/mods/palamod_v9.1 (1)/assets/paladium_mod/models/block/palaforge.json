@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/forge_top",
+    "up": "paladium_mod:blocks/forge_top",
+    "north": "paladium_mod:blocks/forge_front_off",
+    "east": "paladium_mod:blocks/forge_side",
+    "south": "paladium_mod:blocks/forge_side",
+    "west": "paladium_mod:blocks/forge_side",
+    "particle": "paladium_mod:blocks/forge_top"
+  }
+}

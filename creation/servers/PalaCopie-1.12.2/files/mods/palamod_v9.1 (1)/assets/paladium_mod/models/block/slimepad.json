@@ -1,0 +1,8 @@
+{
+  "parent": "paladium_mod:custom/redsre",
+  "textures": {
+    "all": "paladium_mod:blocks/slime_green",
+    "particle": "paladium_mod:blocks/slime_green",
+    "missing": "paladium_mod:blocks/slime_green"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:endiumingot"
+    },
+    "2": {
+      "item": "paladium_mod:endiumingot"
+    },
+    "3": {
+      "item": "paladium_mod:endiumingot"
+    },
+    "5": {
+      "item": "paladium_mod:endiumingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:endiumarmorboots",
+    "count": 1
+  }
+}

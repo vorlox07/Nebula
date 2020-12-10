@@ -1,0 +1,4043 @@
+{
+  "net/mcreator/paladium_mod/ClientProxyPaladiumMod": {
+    "name": "net/mcreator/paladium_mod/ClientProxyPaladiumMod",
+    "interfaces": [
+      "net/mcreator/paladium_mod/IProxyPaladiumMod"
+    ]
+  },
+  "net/mcreator/paladium_mod/ElementsPaladiumMod": {
+    "name": "net/mcreator/paladium_mod/ElementsPaladiumMod",
+    "interfaces": [
+      "net/minecraftforge/fml/common/IFuelHandler",
+      "net/minecraftforge/fml/common/IWorldGenerator"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerLoggedIn(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedInEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerChangedDimension(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerChangedDimensionEvent;)V"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/ElementsPaladiumMod$GuiHandler": {
+    "name": "net/mcreator/paladium_mod/ElementsPaladiumMod$GuiHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/IGuiHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/ElementsPaladiumMod$ModElement": {
+    "name": "net/mcreator/paladium_mod/ElementsPaladiumMod$ModElement",
+    "interfaces": [
+      "java/lang/Comparable"
+    ]
+  },
+  "net/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag": {
+    "name": "net/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "net/mcreator/paladium_mod/PaladiumMod": {
+    "name": "net/mcreator/paladium_mod/PaladiumMod",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "net/mcreator/paladium_mod/PaladiumMod",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "modid": {
+            "value": "paladium_mod"
+          },
+          "version": {
+            "value": "1.0.0"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "net.mcreator.paladium_mod.ClientProxyPaladiumMod"
+          },
+          "serverSide": {
+            "value": "net.mcreator.paladium_mod.ServerProxyPaladiumMod"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance",
+        "value": {
+          "value": "paladium_mod"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBlocks(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBiomes(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerEntities(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerPotions(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerSounds(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerModels(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/PaladiumModVariables$WorldSavedDataSyncMessage": {
+    "name": "net/mcreator/paladium_mod/PaladiumModVariables$WorldSavedDataSyncMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/PaladiumModVariables$WorldSavedDataSyncMessageHandler": {
+    "name": "net/mcreator/paladium_mod/PaladiumModVariables$WorldSavedDataSyncMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/ServerProxyPaladiumMod": {
+    "name": "net/mcreator/paladium_mod/ServerProxyPaladiumMod",
+    "interfaces": [
+      "net/mcreator/paladium_mod/IProxyPaladiumMod"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockAmethystBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockAmethystBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockAmethystBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockAmethystOre": {
+    "name": "net/mcreator/paladium_mod/block/BlockAmethystOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockAmethystOre"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockAmethystOre$1": {
+    "name": "net/mcreator/paladium_mod/block/BlockAmethystOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockChervilStage0": {
+    "name": "net/mcreator/paladium_mod/block/BlockChervilStage0",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockChervilStage0"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervilstage0"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockChervilseedstage1": {
+    "name": "net/mcreator/paladium_mod/block/BlockChervilseedstage1",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockChervilseedstage1"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervilseedstage1"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockChervilseedstage2": {
+    "name": "net/mcreator/paladium_mod/block/BlockChervilseedstage2",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockChervilseedstage2"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervilseedstage2"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockChervilseedstage3": {
+    "name": "net/mcreator/paladium_mod/block/BlockChervilseedstage3",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockChervilseedstage3"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervilseedstage3"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockCobblebreaker": {
+    "name": "net/mcreator/paladium_mod/block/BlockCobblebreaker",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockCobblebreaker"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:cobblebreaker"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockCobblebreaker$BlockCustom": {
+    "name": "net/mcreator/paladium_mod/block/BlockCobblebreaker$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockCrusher": {
+    "name": "net/mcreator/paladium_mod/block/BlockCrusher",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockCrusher"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:crusher"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockCrusher$BlockCustom": {
+    "name": "net/mcreator/paladium_mod/block/BlockCrusher$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEggplantstage0": {
+    "name": "net/mcreator/paladium_mod/block/BlockEggplantstage0",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEggplantstage0"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplantstage0"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEggplantstage1": {
+    "name": "net/mcreator/paladium_mod/block/BlockEggplantstage1",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEggplantstage1"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplantstage1"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEggplantstage2": {
+    "name": "net/mcreator/paladium_mod/block/BlockEggplantstage2",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEggplantstage2"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplantstage2"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEggplantstage3": {
+    "name": "net/mcreator/paladium_mod/block/BlockEggplantstage3",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEggplantstage3"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplantstage3"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEndiumBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockEndiumBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEndiumBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockEndiumLuckyBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockEndiumLuckyBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockEndiumLuckyBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumluckyblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockFindiumBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockFindiumBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockFindiumBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:findiumblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockFindiumOre": {
+    "name": "net/mcreator/paladium_mod/block/BlockFindiumOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockFindiumOre"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:findiumore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockFindiumOre$1": {
+    "name": "net/mcreator/paladium_mod/block/BlockFindiumOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockGrinderBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockGrinderBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockGrinderBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:grinderblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockGrinderCasing": {
+    "name": "net/mcreator/paladium_mod/block/BlockGrinderCasing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockGrinderCasing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:grindercasing"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockGrinderFrame": {
+    "name": "net/mcreator/paladium_mod/block/BlockGrinderFrame",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockGrinderFrame"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:grinderframe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockKiwanostage0": {
+    "name": "net/mcreator/paladium_mod/block/BlockKiwanostage0",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockKiwanostage0"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanostage0"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockKiwanostage1": {
+    "name": "net/mcreator/paladium_mod/block/BlockKiwanostage1",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockKiwanostage1"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanostage1"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockKiwanostage2": {
+    "name": "net/mcreator/paladium_mod/block/BlockKiwanostage2",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockKiwanostage2"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanostage2"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockKiwanostage3": {
+    "name": "net/mcreator/paladium_mod/block/BlockKiwanostage3",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockKiwanostage3"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanostage3"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockKiwanostage4": {
+    "name": "net/mcreator/paladium_mod/block/BlockKiwanostage4",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockKiwanostage4"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanostage4"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockOrangeblestage1": {
+    "name": "net/mcreator/paladium_mod/block/BlockOrangeblestage1",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockOrangeblestage1"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangeblestage1"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockOrangeblestage2": {
+    "name": "net/mcreator/paladium_mod/block/BlockOrangeblestage2",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockOrangeblestage2"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangeblestage2"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockOrangeblestage3": {
+    "name": "net/mcreator/paladium_mod/block/BlockOrangeblestage3",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockOrangeblestage3"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangeblestage3"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockOrangebluestage0": {
+    "name": "net/mcreator/paladium_mod/block/BlockOrangebluestage0",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockOrangebluestage0"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangebluestage0"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockOrangebluestage4": {
+    "name": "net/mcreator/paladium_mod/block/BlockOrangebluestage4",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockOrangebluestage4"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangebluestage4"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPalaForge": {
+    "name": "net/mcreator/paladium_mod/block/BlockPalaForge",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPalaForge"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:palaforge"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPalaForge$BlockCustom": {
+    "name": "net/mcreator/paladium_mod/block/BlockPalaForge$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPalaMachine": {
+    "name": "net/mcreator/paladium_mod/block/BlockPalaMachine",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPalaMachine"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:palamachine"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPalaMachine$BlockCustom": {
+    "name": "net/mcreator/paladium_mod/block/BlockPalaMachine$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumFurnace": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumFurnace",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumFurnace"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumfurnace"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumFurnace$BlockCustom": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumFurnace$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumGreenBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumGreenBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumGreenBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreenblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumGreenOre": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumGreenOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumGreenOre"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreenore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumGreenOre$1": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumGreenOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumLuckyBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumLuckyBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumLuckyBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumluckyblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumOre": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockPaladiumOre"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockPaladiumOre$1": {
+    "name": "net/mcreator/paladium_mod/block/BlockPaladiumOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockSlimePad": {
+    "name": "net/mcreator/paladium_mod/block/BlockSlimePad",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockSlimePad"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:slimepad"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockTitaneBlock": {
+    "name": "net/mcreator/paladium_mod/block/BlockTitaneBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockTitaneBlock"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneblock"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockTitaneOre": {
+    "name": "net/mcreator/paladium_mod/block/BlockTitaneOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/block/BlockTitaneOre"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/block/BlockTitaneOre$1": {
+    "name": "net/mcreator/paladium_mod/block/BlockTitaneOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumArmorTab": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumArmorTab",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumArmorTab"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumItem": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumItem",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumItem"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumMachine": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumMachine",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumMachine"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumModOre": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumModOre",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumModOre"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumModWeapons": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumModWeapons",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumModWeapons"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/creativetab/TabPaladiumTool": {
+    "name": "net/mcreator/paladium_mod/creativetab/TabPaladiumTool",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/creativetab/TabPaladiumTool"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCobblebreakergui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiCrushergui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiCrushergui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiCrushergui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiEndiumluckyblockgui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumFirnacegui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiumluckygui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPaladiummachinegui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiPalaforgegui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiPalaforgegui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/gui/GuiVoidstonegui"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUIButtonPressedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUIButtonPressedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUIButtonPressedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUIButtonPressedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUISlotChangedMessage": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUISlotChangedMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUISlotChangedMessageHandler": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GUISlotChangedMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GuiContainerMod": {
+    "name": "net/mcreator/paladium_mod/gui/GuiVoidstonegui$GuiContainerMod",
+    "interfaces": [
+      "java/util/function/Supplier"
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystArmor": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystArmor",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystArmor"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:amethystarmorhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:amethystarmorbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:amethystarmorlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:amethystarmorboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystAxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystAxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystAxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystBroadSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystBroadSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystBroadSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystbroadsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystFastSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystFastSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystFastSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystfastsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystHammer": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystHammer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystHammer"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethysthammer"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystIngot": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystIngot",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystIngot"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystingot"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystPickaxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystPickaxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystPickaxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystpickaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystSeedPlanter": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystSeedPlanter",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystSeedPlanter"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystseedplanter"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystShovel": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystShovel",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystShovel"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystshovel"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethyststick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemAmethystSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemAmethystSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemAmethystSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:amethystsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemChervil": {
+    "name": "net/mcreator/paladium_mod/item/ItemChervil",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemChervil"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervil"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemChervilSeed": {
+    "name": "net/mcreator/paladium_mod/item/ItemChervilSeed",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemChervilSeed"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:chervilseed"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemCompressedAmethyst": {
+    "name": "net/mcreator/paladium_mod/item/ItemCompressedAmethyst",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemCompressedAmethyst"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:compressedamethyst"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemCompressedPaladium": {
+    "name": "net/mcreator/paladium_mod/item/ItemCompressedPaladium",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemCompressedPaladium"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:compressedpaladium"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemCompressedTitane": {
+    "name": "net/mcreator/paladium_mod/item/ItemCompressedTitane",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemCompressedTitane"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:compressedtitane"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemDiamondParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemDiamondParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemDiamondParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:diamondparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemDiamondString": {
+    "name": "net/mcreator/paladium_mod/item/ItemDiamondString",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemDiamondString"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:diamondstring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEggplant": {
+    "name": "net/mcreator/paladium_mod/item/ItemEggplant",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEggplant"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplant"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEggplantseed": {
+    "name": "net/mcreator/paladium_mod/item/ItemEggplantseed",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEggplantseed"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:eggplantseed"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumArmor": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumArmor",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumArmor"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:endiumarmorhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:endiumarmorbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:endiumarmorlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:endiumarmorboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumAxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumAxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumAxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumBigRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumBigRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumBigRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumbigring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumIngot": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumIngot",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumIngot"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumingot"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumMediumRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumMediumRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumMediumRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiummediumring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumNugget": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumNugget",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumNugget"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumnugget"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumPickaxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumPickaxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumPickaxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumpickaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumSmallRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumSmallRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumSmallRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumsmallring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemEndiumSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemEndiumSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemEndiumSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:endiumsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemFindium": {
+    "name": "net/mcreator/paladium_mod/item/ItemFindium",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemFindium"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:findium"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemFortuneModifier": {
+    "name": "net/mcreator/paladium_mod/item/ItemFortuneModifier",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemFortuneModifier"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:fortunemodifier"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemFragmentOfEndiumNugget": {
+    "name": "net/mcreator/paladium_mod/item/ItemFragmentOfEndiumNugget",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemFragmentOfEndiumNugget"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:fragmentofendiumnugget"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemFurnaceUpgrade": {
+    "name": "net/mcreator/paladium_mod/item/ItemFurnaceUpgrade",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemFurnaceUpgrade"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:furnaceupgrade"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemGoldenParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemGoldenParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemGoldenParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:goldenparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemHangGlider": {
+    "name": "net/mcreator/paladium_mod/item/ItemHangGlider",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemHangGlider"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:hangglider"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemHealOrb": {
+    "name": "net/mcreator/paladium_mod/item/ItemHealOrb",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemHealOrb"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:healorb"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemHealStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemHealStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemHealStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:healstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemHood": {
+    "name": "net/mcreator/paladium_mod/item/ItemHood",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemHood"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:hoodhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:hoodbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:hoodlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:hoodboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemHyperJumpStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemHyperJumpStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemHyperJumpStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:hyperjumpstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemIronParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemIronParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemIronParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:ironparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemJump": {
+    "name": "net/mcreator/paladium_mod/item/ItemJump",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemJump"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:jumphelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:jumpbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:jumplegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:jumpboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemJumpOrb": {
+    "name": "net/mcreator/paladium_mod/item/ItemJumpOrb",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemJumpOrb"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:jumporb"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemJumpStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemJumpStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemJumpStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:jumpstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemKiwano": {
+    "name": "net/mcreator/paladium_mod/item/ItemKiwano",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemKiwano"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwano"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemKiwanoSeed": {
+    "name": "net/mcreator/paladium_mod/item/ItemKiwanoSeed",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemKiwanoSeed"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:kiwanoseed"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemLegendaryStoneFortune": {
+    "name": "net/mcreator/paladium_mod/item/ItemLegendaryStoneFortune",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemLegendaryStoneFortune"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:legendarystonefortune"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemLegendaryStoneInvisibility": {
+    "name": "net/mcreator/paladium_mod/item/ItemLegendaryStoneInvisibility",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemLegendaryStoneInvisibility"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:legendarystoneinvisibility"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemLegendaryStoneRandom": {
+    "name": "net/mcreator/paladium_mod/item/ItemLegendaryStoneRandom",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemLegendaryStoneRandom"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:legendarystonerandom"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemMinageVoidStone": {
+    "name": "net/mcreator/paladium_mod/item/ItemMinageVoidStone",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemMinageVoidStone"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:minagevoidstone"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemOrangeBlue": {
+    "name": "net/mcreator/paladium_mod/item/ItemOrangeBlue",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemOrangeBlue"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangeblue"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemOrangeblueSeed": {
+    "name": "net/mcreator/paladium_mod/item/ItemOrangeblueSeed",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemOrangeblueSeed"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:orangeblueseed"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumApple": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumApple",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumApple"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumapple"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumArmor": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumArmor",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumArmor"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:paladiumarmorhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:paladiumarmorbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:paladiumarmorlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:paladiumarmorboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumAxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumAxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumAxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumBigRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumBigRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumBigRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumbigring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumBroadSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumBroadSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumBroadSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumbroadsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumCore": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumCore",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumCore"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumcore"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumFastSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumFastSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumFastSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumfastsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreen": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreen",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreen"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:paladiumgreenhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:paladiumgreenbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:paladiumgreenlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:paladiumgreenboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreenAxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreenAxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreenAxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreenaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreenIngot": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreenIngot",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreenIngot"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreeningot"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreenPickaxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreenPickaxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreenPickaxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreenpickaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreenShovel": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreenShovel",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreenShovel"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreenshovel"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumGreenSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumGreenSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumGreenSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumgreensword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumHammer": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumHammer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumHammer"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumhammer"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumIngot": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumIngot",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumIngot"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumingot"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumMediumRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumMediumRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumMediumRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiummediumring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumPickaxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumPickaxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumPickaxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumpickaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumShovel": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumShovel",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumShovel"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumshovel"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumSmallRing": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumSmallRing",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumSmallRing"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumsmallring"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPaladiumSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemPaladiumSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPaladiumSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:paladiumsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemPalamixedCoal": {
+    "name": "net/mcreator/paladium_mod/item/ItemPalamixedCoal",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemPalamixedCoal"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:palamixedcoal"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemScuba": {
+    "name": "net/mcreator/paladium_mod/item/ItemScuba",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemScuba"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:scubahelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:scubabody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:scubalegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:scubaboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemSlimy": {
+    "name": "net/mcreator/paladium_mod/item/ItemSlimy",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemSlimy"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:slimyhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:slimybody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:slimylegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:slimyboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemSmithHammer": {
+    "name": "net/mcreator/paladium_mod/item/ItemSmithHammer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemSmithHammer"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:smithhammer"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemSpeedOrb": {
+    "name": "net/mcreator/paladium_mod/item/ItemSpeedOrb",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemSpeedOrb"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:speedorb"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemSpeedStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemSpeedStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemSpeedStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:speedstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemStickOfGod": {
+    "name": "net/mcreator/paladium_mod/item/ItemStickOfGod",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemStickOfGod"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:stickofgod"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemStrengthOrb": {
+    "name": "net/mcreator/paladium_mod/item/ItemStrengthOrb",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemStrengthOrb"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:strengthorb"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemStrengthStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemStrengthStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemStrengthStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:strengthstick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneArmor": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneArmor",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneArmor"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:titanearmorhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:titanearmorbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:titanearmorlegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:titanearmorboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneAxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneAxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneAxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneBroadSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneBroadSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneBroadSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanebroadsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneFastSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneFastSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneFastSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanefastsword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneHammer": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneHammer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneHammer"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanehammer"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneIngot": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneIngot",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneIngot"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneingot"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneParticule": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneParticule",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneParticule"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneparticule"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitanePickaxe": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitanePickaxe",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitanePickaxe"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanepickaxe"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneShovel": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneShovel",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneShovel"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titaneshovel"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneStick": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneStick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneStick"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanestick"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTitaneSword": {
+    "name": "net/mcreator/paladium_mod/item/ItemTitaneSword",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTitaneSword"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:titanesword"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTravel": {
+    "name": "net/mcreator/paladium_mod/item/ItemTravel",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTravel"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:travelhelmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:travelbody"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:travellegs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:travelboots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemTravel2": {
+    "name": "net/mcreator/paladium_mod/item/ItemTravel2",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemTravel2"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "helmet",
+        "value": {
+          "value": "paladium_mod:travel2helmet"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "body",
+        "value": {
+          "value": "paladium_mod:travel2body"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "legs",
+        "value": {
+          "value": "paladium_mod:travel2legs"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "boots",
+        "value": {
+          "value": "paladium_mod:travel2boots"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemVoidStone": {
+    "name": "net/mcreator/paladium_mod/item/ItemVoidStone",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemVoidStone"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:voidstone"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/ItemWings": {
+    "name": "net/mcreator/paladium_mod/item/ItemWings",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/ItemWings"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "paladium_mod:wings"
+        }
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/crafting/RecipeAmethystIngotsmelt": {
+    "name": "net/mcreator/paladium_mod/item/crafting/RecipeAmethystIngotsmelt",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/crafting/RecipeAmethystIngotsmelt"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/crafting/RecipeFindiumSmelt": {
+    "name": "net/mcreator/paladium_mod/item/crafting/RecipeFindiumSmelt",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/crafting/RecipeFindiumSmelt"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/crafting/RecipePaladiumIngotSmelt": {
+    "name": "net/mcreator/paladium_mod/item/crafting/RecipePaladiumIngotSmelt",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/crafting/RecipePaladiumIngotSmelt"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/crafting/RecipePaladiumgreeneingotsmelt": {
+    "name": "net/mcreator/paladium_mod/item/crafting/RecipePaladiumgreeneingotsmelt",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/crafting/RecipePaladiumgreeneingotsmelt"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/item/crafting/RecipeTitaneIngotSmelt": {
+    "name": "net/mcreator/paladium_mod/item/crafting/RecipeTitaneIngotSmelt",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/item/crafting/RecipeTitaneIngotSmelt"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureAmethystHammerBlockDestroyedWithTool": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureAmethystHammerBlockDestroyedWithTool",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureAmethystHammerBlockDestroyedWithTool"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureAmethystSeedPlanterRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureAmethystSeedPlanterRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureAmethystSeedPlanterRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureChervilSeedRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureChervilSeedRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureChervilSeedRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureChervilStage0UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureChervilStage0UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureChervilStage0UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage1UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage1UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage1UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage2UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage2UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage2UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage3BlockDestroyedByPlayer": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage3BlockDestroyedByPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureChervilseedstage3BlockDestroyedByPlayer"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureCobblebreakerUpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureCobblebreakerUpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureCobblebreakerUpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureCrusherUpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureCrusherUpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureCrusherUpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEggplantseedRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEggplantseedRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEggplantseedRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage0UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage0UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage0UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage1UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage1UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage1UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage2UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage2UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage2UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage3BlockDestroyedByPlayer": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage3BlockDestroyedByPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEggplantstage3BlockDestroyedByPlayer"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBodyTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBodyTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBodyTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBootsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBootsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorBootsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorHelmetTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorHelmetTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorHelmetTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorLeggingsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorLeggingsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureEndiumArmorLeggingsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureHangGliderRightClickedInAir": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureHangGliderRightClickedInAir",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureHangGliderRightClickedInAir"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureHealStickRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureHealStickRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureHealStickRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureHyperJumpStickRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureHyperJumpStickRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureHyperJumpStickRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureJumpBodyTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureJumpBodyTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureJumpBodyTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureJumpStickRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureJumpStickRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureJumpStickRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanoSeedRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanoSeedRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanoSeedRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage0UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage0UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage0UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage1UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage1UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage1UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage2UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage2UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage2UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage3UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage3UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage3UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage4BlockDestroyedByPlayer": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage4BlockDestroyedByPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureKiwanostage4BlockDestroyedByPlayer"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneFortuneRightClickedInAir": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneFortuneRightClickedInAir",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneFortuneRightClickedInAir"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneInvisibilityRightClickedInAir": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneInvisibilityRightClickedInAir",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneInvisibilityRightClickedInAir"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneRandomRightClickedInAir": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneRandomRightClickedInAir",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureLegendaryStoneRandomRightClickedInAir"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage1UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage1UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage1UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage2UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage2UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage2UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage3UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage3UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblestage3UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangeblueSeedRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblueSeedRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangeblueSeedRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage0UpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage0UpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage0UpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage4BlockDestroyedByPlayer": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage4BlockDestroyedByPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureOrangebluestage4BlockDestroyedByPlayer"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePalaForgeUpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePalaForgeUpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePalaForgeUpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePalaMachineUpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePalaMachineUpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePalaMachineUpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumAppleFoodEaten": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumAppleFoodEaten",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumAppleFoodEaten"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBodyTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBodyTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBodyTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBootsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBootsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorBootsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorHelmetTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorHelmetTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorHelmetTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorLeggingsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorLeggingsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorLeggingsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBodyTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBodyTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBodyTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBootsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBootsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabBootsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabHelmetTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabHelmetTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabHelmetTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabLeggingsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabLeggingsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumArmorTabLeggingsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumFurnaceUpdateTick": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumFurnaceUpdateTick",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumFurnaceUpdateTick"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedurePaladiumHammerBlockDestroyedWithTool": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumHammerBlockDestroyedWithTool",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedurePaladiumHammerBlockDestroyedWithTool"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureScubaHelmetTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureScubaHelmetTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureScubaHelmetTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureSlimePadEntityCollidesInTheBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureSlimePadEntityCollidesInTheBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureSlimePadEntityCollidesInTheBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureSmithHammerBlockDestroyedWithTool": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureSmithHammerBlockDestroyedWithTool",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureSmithHammerBlockDestroyedWithTool"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureSpeedStickRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureSpeedStickRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureSpeedStickRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureStickOfGodRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureStickOfGodRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureStickOfGodRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureStrengthStickRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureStrengthStickRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureStrengthStickRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureTitaneHammerBlockDestroyedWithTool": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureTitaneHammerBlockDestroyedWithTool",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureTitaneHammerBlockDestroyedWithTool"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureTravelLeggingsTickEvent": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureTravelLeggingsTickEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureTravelLeggingsTickEvent"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureVoidStoneRightClickedOnBlock": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureVoidStoneRightClickedOnBlock",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureVoidStoneRightClickedOnBlock"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureWhenGrassisbreaked": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureWhenGrassisbreaked",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureWhenGrassisbreaked"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onBlockBreak(Lnet/minecraftforge/event/world/BlockEvent$BreakEvent;)V"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonendiumluckypressed": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonendiumluckypressed",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonendiumluckypressed"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonluckyblockpalaclicked": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonluckyblockpalaclicked",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureWhenbuttonluckyblockpalaclicked"
+      }
+    ]
+  },
+  "net/mcreator/paladium_mod/procedure/ProcedureWheniteminvoidstonechange": {
+    "name": "net/mcreator/paladium_mod/procedure/ProcedureWheniteminvoidstonechange",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/paladium_mod/ElementsPaladiumMod$ModElement$Tag;",
+        "target": "net/mcreator/paladium_mod/procedure/ProcedureWheniteminvoidstonechange"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/paladiumores",
+    "up": "paladium_mod:blocks/paladiumores",
+    "north": "paladium_mod:blocks/paladiumores",
+    "east": "paladium_mod:blocks/paladiumores",
+    "south": "paladium_mod:blocks/paladiumores",
+    "west": "paladium_mod:blocks/paladiumores",
+    "particle": "paladium_mod:blocks/paladiumores"
+  }
+}

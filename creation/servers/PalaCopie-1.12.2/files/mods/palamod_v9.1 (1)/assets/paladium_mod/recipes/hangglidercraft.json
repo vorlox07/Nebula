@@ -1,0 +1,26 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:leather"
+    },
+    "3": {
+      "item": "paladium_mod:wings"
+    },
+    "4": {
+      "item": "minecraft:leather"
+    },
+    "5": {
+      "item": "paladium_mod:wings"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:hangglider",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:titanestick"
+    },
+    "1": {
+      "item": "paladium_mod:titanestick"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:titanefastsword",
+    "count": 1
+  }
+}

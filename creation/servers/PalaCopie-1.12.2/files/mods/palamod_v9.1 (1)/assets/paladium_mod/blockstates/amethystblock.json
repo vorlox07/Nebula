@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "paladium_mod:amethystblock"
+    },
+    "facing=north": {
+      "model": "paladium_mod:amethystblock"
+    },
+    "facing=east": {
+      "model": "paladium_mod:amethystblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "paladium_mod:amethystblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "paladium_mod:amethystblock",
+      "y": 270
+    }
+  }
+}

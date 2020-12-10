@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paladium_mod:blocks/amethysteore",
+    "up": "paladium_mod:blocks/amethysteore",
+    "north": "paladium_mod:blocks/amethysteore",
+    "east": "paladium_mod:blocks/amethysteore",
+    "south": "paladium_mod:blocks/amethysteore",
+    "west": "paladium_mod:blocks/amethysteore",
+    "particle": "paladium_mod:blocks/amethysteore"
+  }
+}

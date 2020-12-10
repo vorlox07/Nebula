@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "paladium_mod:amethystore"
+    },
+    "facing=north": {
+      "model": "paladium_mod:amethystore"
+    },
+    "facing=east": {
+      "model": "paladium_mod:amethystore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "paladium_mod:amethystore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "paladium_mod:amethystore",
+      "y": 270
+    }
+  }
+}

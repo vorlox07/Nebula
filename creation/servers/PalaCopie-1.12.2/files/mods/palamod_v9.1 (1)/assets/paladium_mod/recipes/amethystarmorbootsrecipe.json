@@ -1,0 +1,26 @@
+{
+  "group": "paladium_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "2": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "3": {
+      "item": "paladium_mod:amethystingot"
+    },
+    "5": {
+      "item": "paladium_mod:amethystingot"
+    }
+  },
+  "result": {
+    "item": "paladium_mod:amethystarmorboots",
+    "count": 1
+  }
+}
