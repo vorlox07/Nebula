@@ -17,8 +17,8 @@
       "minecraftVersion": "1.12.2",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+        "largeImageText": "<*PaladiumCopy/app/assets/images/LoadingSeal>",
+        "largeImageKey": "<*PaladiumCopy/app/assets/images/LoadingSeal>"
       },
       "mainServer": true,
       "autoconnect": false,
